@@ -12,7 +12,6 @@ const config = fs.existsSync('./config.json') ? readJSON('./config.json') : {}
 
 const args = getArguments()
 const showHelp = () => {
-    console.log(`Translator v1.0.5. Copyright 2023 by Serhii Pimenov`)
     console.log(`Use: translate [...arguments]`)
     console.log(`--apikey - specify google translate api key`)
     console.log(`--from - specify source language, default is en`)
@@ -22,8 +21,13 @@ const showHelp = () => {
     console.log(`--json - translate json file, specify file name with it`)
     console.log(`--out - specify output file name for --json, --text inputs`)
     console.log(`--help - show this help`)
+    console.log(`--version - show translator version`)
     console.log(`Example: translate --apikey XXX --from en --to uk --str "Hi there!"`)
     process.exit(0)
+}
+
+const showVersion = () => {
+    console.log(`Translator v1.0.7. Copyright 2023 by Serhii Pimenov. All Rights Reserved.`)
 }
 
 if (!args) {
@@ -37,12 +41,17 @@ if (Object.keys(args).includes('help')) {
     process.exit(0)
 }
 
+if (Object.keys(args).includes('version')) {
+    showVersion()
+    process.exit(0)
+}
+
 if (!text && !json && !str) {
     console.log(`Nothing to translate! Use keys --text, --json or --str to set source.`)
     process.exit(0)
 }
 
-if (!apikey && !a && !config.key) {
+if (!apikey && !config.key) {
     console.log(`API key required! Please, use argument --apikey to specify one.`)
     process.exit(0)
 }
