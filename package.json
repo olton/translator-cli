@@ -1,6 +1,6 @@
 {
   "name": "@olton/translator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Translate string, text or json file with google translate api.",
   "main": "src/index.js",
   "type": "module",
@@ -8,8 +8,7 @@
     "translate": "src/index.js"
   },
   "scripts": {
-    "start": "node .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ."
   },
   "keywords": [
     "translate",
@@ -22,5 +21,8 @@
   "license": "MIT",
   "dependencies": {
     "translate": "^2.0.2"
+  },
+  "engines": {
+    "node": ">=14.14"
   }
 }
