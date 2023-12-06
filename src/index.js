@@ -12,7 +12,17 @@ const config = fs.existsSync('./config.json') ? readJSON('./config.json') : {}
 
 const args = getArguments()
 const showHelp = () => {
-    console.log(`Use: translate --apikey XXX --from xx --to xx [--text str || [--file file_name [--out file_name]]]`)
+    console.log(`Translator v1.0.5. Copyright 2023 by Serhii Pimenov`)
+    console.log(`Use: translate [...arguments]`)
+    console.log(`--apikey, -a - specify google translate api key`)
+    console.log(`--from, -f - specify source language, default is en`)
+    console.log(`--to, -t - specify target language, default is uk`)
+    console.log(`--str, -s - translate string`)
+    console.log(`--text, -x - translate text file, specify file name with it`)
+    console.log(`--json, -j - translate json file, specify file name with it`)
+    console.log(`--out, -o - specify output file name for --json, --text inputs`)
+    console.log(`--help, -h - show this help`)
+    console.log(`Example: translate --apikey XXX --from en --to uk --str "Hi there!"`)
     process.exit(0)
 }
 
@@ -20,10 +30,12 @@ if (!args) {
     showHelp()
 }
 
-const {from = 'en', to = 'uk', str, text, json, out, apikey, help} = args
+const {from = 'en', to = 'uk', str, text, json, out, apikey} = args
+const {f = 'en', t = 'uk', s, x, j, o, a} = args
 
-if (help) {
+if (Object.keys(args).includes('help') || Object.keys(args).includes('h')) {
     showHelp()
+    process.exit(0)
 }
 
 if (!text && !json && !str) {
