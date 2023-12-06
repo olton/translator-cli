@@ -1,0 +1,27 @@
+{
+  "name": "@olton/translator",
+  "version": "1.0.0",
+  "description": "Translate string, text or json file with google translate api.",
+  "main": "src/index.js",
+  "type": "module",
+  "bin": {
+    "translate": "src/index.js"
+  },
+  "scripts": {
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "translate",
+    "translate-json",
+    "json",
+    "translate-text",
+    "javascript"
+  ],
+  "author": "Serhii Pimenov <serhii@pimenov.com.ua>",
+  "license": "MIT",
+  "dependencies": {
+    "@google-cloud/translate": "^8.0.2",
+    "translate": "^2.0.2"
+  }
+}
