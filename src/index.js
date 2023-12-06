@@ -14,14 +14,14 @@ const args = getArguments()
 const showHelp = () => {
     console.log(`Translator v1.0.5. Copyright 2023 by Serhii Pimenov`)
     console.log(`Use: translate [...arguments]`)
-    console.log(`--apikey, -a - specify google translate api key`)
-    console.log(`--from, -f - specify source language, default is en`)
-    console.log(`--to, -t - specify target language, default is uk`)
-    console.log(`--str, -s - translate string`)
-    console.log(`--text, -x - translate text file, specify file name with it`)
-    console.log(`--json, -j - translate json file, specify file name with it`)
-    console.log(`--out, -o - specify output file name for --json, --text inputs`)
-    console.log(`--help, -h - show this help`)
+    console.log(`--apikey - specify google translate api key`)
+    console.log(`--from - specify source language, default is en`)
+    console.log(`--to - specify target language, default is uk`)
+    console.log(`--str - translate string`)
+    console.log(`--text - translate text file, specify file name with it`)
+    console.log(`--json - translate json file, specify file name with it`)
+    console.log(`--out - specify output file name for --json, --text inputs`)
+    console.log(`--help - show this help`)
     console.log(`Example: translate --apikey XXX --from en --to uk --str "Hi there!"`)
     process.exit(0)
 }
@@ -31,19 +31,18 @@ if (!args) {
 }
 
 const {from = 'en', to = 'uk', str, text, json, out, apikey} = args
-const {f = 'en', t = 'uk', s, x, j, o, a} = args
 
-if (Object.keys(args).includes('help') || Object.keys(args).includes('h')) {
+if (Object.keys(args).includes('help')) {
     showHelp()
     process.exit(0)
 }
 
 if (!text && !json && !str) {
-    console.log(`Nothing to translate! Use keys --text, --file or --str to set source.`)
+    console.log(`Nothing to translate! Use keys --text, --json or --str to set source.`)
     process.exit(0)
 }
 
-if (!apikey && !config.key) {
+if (!apikey && !a && !config.key) {
     console.log(`API key required! Please, use argument --apikey to specify one.`)
     process.exit(0)
 }

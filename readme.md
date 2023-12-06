@@ -14,13 +14,13 @@ translate --apikey XXX --from en --to es --str "Hi there!"
 ## Arguments
 Use: `translate [...arguments]`
 
-+ `--apikey`, `-a` - specify the Google translation API key
-+ `--from`, `-f` - specify source language, default is en
-+ `--to`, `-t` - specify target language, default is uk
-+ `--str`, `-s` - translate string
-+ `--text`, `-x` - translate text file, specify file name with it
-+ `--json`, `-j` - translate json file, specify file name with it
-+ `--out`, `-o` - specify output file name for --json, --text inputs
-+ `--help`, `-h` - show help
++ `--apikey` - specify the Google translation API key
++ `--from` - specify source language, default is en
++ `--to` - specify target language, default is uk
++ `--str` - translate string
++ `--text` - translate text file, specify file name with it
++ `--json` - translate json file, specify file name with it
++ `--out` - specify output file name for --json, --text inputs
++ `--help` - show help
 
 Copyright 2023 by Serhii Pimenov. Licensed under MIT license.
