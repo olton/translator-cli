@@ -1,6 +1,6 @@
 {
   "name": "@olton/translator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Translate string, text or json file with google translate api.",
   "main": "src/index.js",
   "type": "module",
@@ -21,7 +21,6 @@
   "author": "Serhii Pimenov <serhii@pimenov.com.ua>",
   "license": "MIT",
   "dependencies": {
-    "@google-cloud/translate": "^8.0.2",
     "translate": "^2.0.2"
   }
 }
