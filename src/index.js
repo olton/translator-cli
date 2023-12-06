@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import translate from "translate";
 import getArguments from "./helpers/args.js"
 import fs from "fs"

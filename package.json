@@ -1,6 +1,6 @@
 {
   "name": "@olton/translator",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Translate string, text or json file with google translate api.",
   "main": "src/index.js",
   "type": "module",
