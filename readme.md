@@ -22,5 +22,6 @@ Use: `translate [...arguments]`
 + `--json` - translate json file, specify file name with it
 + `--out` - specify output file name for --json, --text inputs
 + `--help` - show help
++ `--version` - show a Translator version
 
 Copyright 2023 by Serhii Pimenov. Licensed under MIT license.
