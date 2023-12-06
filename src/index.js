@@ -8,7 +8,7 @@ const readJSON = (file) => JSON.parse(fs.readFileSync(file, {encoding: "utf8"}))
 const readFile = (file) => fs.readFileSync(file, {encoding: "utf8"})
 const fileName = (str) => str.split(/(\\|\/)/g).pop()
 
-const config = readJSON('./config.json')
+const config = fs.existsSync('./config.json') ? readJSON('./config.json') : {}
 
 const args = getArguments()
 const showHelp = () => {
@@ -28,6 +28,11 @@ if (help) {
 
 if (!text && !json && !str) {
     console.log(`Nothing to translate! Use keys --text, --file or --str to set source.`)
+    process.exit(0)
+}
+
+if (!apikey && !config.key) {
+    console.log(`API key required! Please, use argument --apikey to specify one.`)
     process.exit(0)
 }
 
