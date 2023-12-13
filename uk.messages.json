@@ -1,0 +1,164 @@
+{
+  "name": {
+    "message": "EneiEditor"
+  },
+  "description": {
+    "message": "Chrome extension for editing text blocks for Weightless CMS ENEI"
+  },
+  "bold": {
+    "message": "Bold text"
+  },
+  "italic": {
+    "message": "Italic text"
+  },
+  "underline": {
+    "message": "Underline text"
+  },
+  "strike": {
+    "message": "Strikethrough text"
+  },
+  "superscript": {
+    "message": "Superscript"
+  },
+  "subscript": {
+    "message": "Subscript"
+  },
+  "list_num": {
+    "message": "Numbered list"
+  },
+  "list_bull": {
+    "message": "Bulleted list"
+  },
+  "heading": {
+    "message": "text type"
+  },
+  "heading1": {
+    "message": "Heading 1"
+  },
+  "heading2": {
+    "message": "Heading 2"
+  },
+  "heading3": {
+    "message": "Heading 3"
+  },
+  "heading4": {
+    "message": "Heading 4"
+  },
+  "heading5": {
+    "message": "Heading 5"
+  },
+  "heading6": {
+    "message": "Heading 6"
+  },
+  "regular": {
+    "message": "Regular text"
+  },
+  "p_left": {
+    "message": "Align left"
+  },
+  "p_center": {
+    "message": "Align center"
+  },
+  "p_right": {
+    "message": "Align right"
+  },
+  "link": {
+    "message": "Insert link"
+  },
+  "unlink": {
+    "message": "Remove link"
+  },
+  "image": {
+    "message": "Insert image"
+  },
+  "quote": {
+    "message": "Quoted text"
+  },
+  "code": {
+    "message": "Code"
+  },
+  "indent_increase": {
+    "message": "Indent increase"
+  },
+  "indent_decrease": {
+    "message": "Indent decrease"
+  },
+  "ltr": {
+    "message": "Ltr text"
+  },
+  "rtl": {
+    "message": "Rtl text"
+  },
+  "clear_format": {
+    "message": "Clear format"
+  },
+  "undo": {
+    "message": "Undo operation"
+  },
+  "redo": {
+    "message": "Redo operation"
+  },
+  "revert": {
+    "message": "Revert content"
+  },
+  "save": {
+    "message": "Save"
+  },
+  "cancel": {
+    "message": "Cancel"
+  },
+  "reset": {
+    "message": "Reset"
+  },
+  "register": {
+    "message": "Register"
+  },
+  "login": {
+    "message": "Login to system"
+  },
+  "github": {
+    "message": "GitHub repository page"
+  },
+  "options": {
+    "message": "Extension options"
+  },
+  "options_form_title": {
+    "message": "Extension options"
+  },
+  "server_label": {
+    "message": "Server address"
+  },
+  "server_input": {
+    "message": "Enter server url..."
+  },
+  "register_form_title": {
+    "message": "Register in system"
+  },
+  "login_form_title": {
+    "message": "Login in system"
+  },
+  "user_name_label": {
+    "message": "User name"
+  },
+  "user_name_input": {
+    "message": "Enter user name..."
+  },
+  "user_email_label": {
+    "message": "User email"
+  },
+  "user_email_input": {
+    "message": "Enter email..."
+  },
+  "user_password_label": {
+    "message": "User password"
+  },
+  "user_password_input": {
+    "message": "Enter password..."
+  },
+  "no_accreditation_label": {
+    "message": "Haven't accreditation?"
+  },
+  "no_accreditation_button": {
+    "message": "Register!"
+  }
+}

@@ -64,7 +64,7 @@ let chars = {count: 0}
 const translateObj = async (src, counter) => {
     for(let key in src) {
         if (isObject(src[key])) {
-            await translateObj(src[key])
+            await translateObj(src[key], counter)
         } else {
             if (typeof src[key] === "string") {
                 counter.count += src[key].length
